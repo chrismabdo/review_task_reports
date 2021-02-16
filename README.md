@@ -35,6 +35,8 @@ Input/Output Table
 ------------------------------------
 create_report("") | "No Result Given"
 create_report("green") | "Green: 1"
+create_report("green, green") | "Green: 2"
 create_report("green, amber, red") | "Green: 1\nAmber: 1\nRed: 1"
 create_report("green, green, amber") | "Green: 2\nAmber: 1"
 create_report("green, whimsy, dave") | "Green: 1\nUncounted: 2"
+create_report("Green, green, Amber") | "Green: 2\nAmber: 1"

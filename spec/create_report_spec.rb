@@ -8,4 +8,8 @@ describe 'create_report' do
     it 'will return the correct report for one result' do
       expect(create_report("green")).to eq "Green: 1"
     end
+
+    it 'will return the correct report for two result of the same category' do
+      expect(create_report("green, green")).to eq "Green: 2"
+    end
 end

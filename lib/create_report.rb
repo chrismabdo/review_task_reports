@@ -2,6 +2,7 @@ def create_report(grades)
     if grades.empty? 
       "No Result Given"
     else
-      "Green: 1"  
+      grades_arr = grades.split(", ")
+      "Green: #{grades_arr.count}"  
     end
 end
